@@ -1,13 +1,26 @@
-// const getHousesInParis = () => {
-//   // declaration de la promess
-//   return new Promise((resolve, reject) => {
-//     const houses = [];
+// Exercice 1
 
-    setTimeout(() => {
-      "Hello world"
-    }, 2000);
-  // });
-// };
+setTimeout(() => {
+ "Hello world"
+}, 2000);
+
+
+// Exercice 2
+
+const temperature = 2
+
+const feeling = () => {
+return new Promise((resolve, reject) => {
+
+setTimeout(() => {
+  if (temperature<=10) {
+    resolve("Il fait froid");
+  } else {
+    reject("Il fait chaud");
+  } 
+  }, 4000)
+})};
+
 
 // const waitForMyResults = async () => {
 //   try {
